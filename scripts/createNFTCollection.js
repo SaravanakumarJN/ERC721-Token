@@ -1,6 +1,6 @@
 const hre = require("hardhat");
 
-// Deployed Contract Address: 0x1738adee1F71DE948f58b80A5c85e7a8BDfbDC99
+// Deployed Contract Address: 0xb5B2322027267C29282e177eE68f0Ea08B83be2C
 async function runScript() {
   const CreateNFTCollection = await hre.ethers.getContractFactory('CreateNFTCollection')
   const createNFTCollection = await CreateNFTCollection.deploy('JackieChan', 'JC')

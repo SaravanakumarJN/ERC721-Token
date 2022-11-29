@@ -24,7 +24,7 @@ contract CreateNFTCollection is Erc721{
 
   function tokenURI(uint256 _tokenId) external view returns (string memory) {
     // check if token is valid
-    require(_ownerOf[_tokenId] == address(0), "Invalid Token");
+    require(_ownerOf[_tokenId] != address(0), "Invalid Token");
 
     return _tokenURIs[_tokenId];
   }
