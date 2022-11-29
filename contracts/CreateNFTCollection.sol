@@ -22,7 +22,7 @@ contract CreateNFTCollection is Erc721{
     return _symbol;
   }
 
-  function tokenURIs(uint256 _tokenId) external view returns (string memory) {
+  function tokenURI(uint256 _tokenId) external view returns (string memory) {
     // check if token is valid
     require(_ownerOf[_tokenId] == address(0), "Invalid Token");
 
