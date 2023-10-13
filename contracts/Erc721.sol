@@ -5,7 +5,7 @@ contract Erc721{
     // object to hold no. of nft's held by address
     mapping(address => uint256) internal _balanceOf;
     // object to hold owner's address of nft
-    mapping(uint256 => address) internal _ownerOf;
+    mapping(uint256 => address) _ownerOf;
     // object to hold the approver of a nft
     mapping(uint256 => address) internal _approverOf;
     // object to hold the approver of all the nft of a user
